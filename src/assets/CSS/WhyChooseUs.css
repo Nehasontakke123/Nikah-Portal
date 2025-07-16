@@ -100,21 +100,67 @@
 }
 
 /* ✅ Responsive Design */
+
 @media screen and (max-width: 768px) {
   .why-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
+  .why-left,
+  .why-right {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .img-wrapper {
+    width: 100%;
+    height: 300px; /* Fixed height for image section */
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .why-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .overlay-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #ffe2e8, #ffd1dc, #fff0f3);
+    padding: 16px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .overlay-card h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .overlay-card p {
+    font-size: 14px;
   }
 
   .why-right h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .why-subtext {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card {
+    padding: 14px;
   }
 }

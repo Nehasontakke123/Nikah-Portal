@@ -5,73 +5,68 @@ const FeaturesSection = () => {
   return (
     <section className="features-section">
       <div className="features-container">
-        <p className="small-heading">MORE THAN 25 YEARS OF</p>
+        <p className="small-heading">OVER 25 YEARS OF</p>
         <h2 className="main-heading">
-          Bringing People <span className="highlight">Together</span>
+          Trusted <span className="highlight">Muslim Matchmaking</span>
         </h2>
 
         <div className="features-grid">
           <div className="feature-card">
             <div className="icon-circle">🕌</div>
-            <h3>100% Halal Profiles</h3>
+            <h3>Verified Muslim Profiles</h3>
             <p>
-              Search by sect, city, family values, and more —
-              all profiles verified for Islamic compatibility.
+              All profiles are manually reviewed to ensure authenticity, values, and serious intent for marriage.
             </p>
           </div>
 
           <div className="feature-card">
-            <div className="icon-circle">✅</div>
-            <h3>Verified by Imam Visits</h3>
+            <div className="icon-circle">📜</div>
+            <h3>Faith & Family Aligned</h3>
             <p>
-              Listings verified by local Imams and community leaders
-              for authentic and genuine matchmaking.
+              Match based on beliefs, family background, prayer habits, and values that matter to you.
             </p>
           </div>
 
           <div className="feature-card">
-            <div className="icon-circle">🔒</div>
-            <h3>Privacy First</h3>
+            <div className="icon-circle">🔐</div>
+            <h3>Privacy with Respect</h3>
             <p>
-              Your details are protected. Photos and contact
-              information are visible only with your consent.
+              Your personal information is safe. Control who can see your photos and details at every step.
             </p>
           </div>
         </div>
       </div>
 
       <div className="app-benefits-section">
-  <h2>Why Choose the NikahNamah App?</h2>
-  <p>Designed for modern Muslims with faith, values & trust in mind</p>
+        <h2>Why Choose the NikahNamah App?</h2>
+        <p>Built for modern Muslims who value family, trust, and faith</p>
 
-  <div className="benefits-grid">
-    <div className="benefit-card">
-      <div className="benefit-icon">📱</div>
-      <h4>Simplified Mobile Nikah</h4>
-      <p>Experience seamless browsing, chatting & Nikah proposals on mobile.</p>
-    </div>
+        <div className="benefits-grid">
+          <div className="benefit-card">
+            <div className="benefit-icon">📱</div>
+            <h4>Smooth Mobile Experience</h4>
+            <p>Browse, connect, and send proposals on-the-go with full convenience and control.</p>
+          </div>
 
-    <div className="benefit-card">
-      <div className="benefit-icon">🤝</div>
-      <h4>Family-First Interface</h4>
-      <p>Parents & elders can participate in match preferences & approvals.</p>
-    </div>
+          <div className="benefit-card">
+            <div className="benefit-icon">👪</div>
+            <h4>Family Involvement</h4>
+            <p>Invite parents or guardians to participate in the journey for added trust and comfort.</p>
+          </div>
 
-    <div className="benefit-card">
-      <div className="benefit-icon">🧕</div>
-      <h4>Hijab-Friendly Privacy</h4>
-      <p>Control over photos, contact info & visibility for sisters & families.</p>
-    </div>
+          <div className="benefit-card">
+            <div className="benefit-icon">🧕</div>
+            <h4>Respect for Modesty</h4>
+            <p>Sisters can stay in control of who views their profile, respecting boundaries and privacy.</p>
+          </div>
 
-    <div className="benefit-card">
-      <div className="benefit-icon">📿</div>
-      <h4>Faith-Based Matchmaking</h4>
-      <p>Get matched based on Deen level, prayer habits, mahr preferences & more.</p>
-    </div>
-  </div>
-</div>
-
-      
+          <div className="benefit-card">
+            <div className="benefit-icon">📿</div>
+            <h4>Faith-Centered Matching</h4>
+            <p>Connect with matches who share your values, religious practices, and future goals.</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
