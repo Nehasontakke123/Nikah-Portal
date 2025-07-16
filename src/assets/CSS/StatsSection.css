@@ -1,0 +1,138 @@
+.stats-section {
+  background: linear-gradient(135deg, #ffe2e8, #ffd1dc, #fff0f3); /* Softer pastel pinks */
+  padding: 60px 20px;
+  color:black;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Floating hearts on whole section */
+.global-heart-shower-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.global-heart {
+  position: absolute;
+  top: -20px;
+  font-size: 20px;
+  animation: heartRain 6s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes heartRain {
+  0% {
+    transform: translateY(-20px) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(50vh) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.stats-text {
+  position: relative;
+  z-index: 2;
+}
+
+.stats-text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color:black;
+  margin-bottom: 12px;
+}
+
+.floating-heart {
+  display: inline-block;
+  animation: floatHeart 2s ease-in-out infinite;
+  margin-right: 6px;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.stats-text p {
+  font-size: 15px;
+  color: black;
+}
+
+.stats-text a {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.stats-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.stats-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px 36px;
+  min-width: 200px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.stats-card h3 {
+  font-size: 26px;
+  color: black;
+  font-weight: 700;
+  z-index: 1;
+  position: relative;
+}
+
+.stats-card p {
+  font-size: 15px;
+  color: black;
+  z-index: 1;
+  position: relative;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .stats-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .stats-text h2 {
+    font-size: 24px;
+  }
+}

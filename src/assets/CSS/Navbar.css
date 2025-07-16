@@ -1,0 +1,150 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 30px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF477E;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #888888;
+  letter-spacing: 1px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2E2E2E;
+  position: relative;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+}
+
+.nav-links li a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: #FF477E;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #FF477E;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+/* Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #FF477E;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #D63484;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 1001;
+  }
+
+  .nav-links,
+  .nav-buttons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  .nav-links.show,
+  .nav-buttons.show {
+    display: flex;
+  }
+
+  .nav-links {
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .nav-buttons {
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .btn {
+    width: 90%;
+    justify-content: center;
+  }
+}
