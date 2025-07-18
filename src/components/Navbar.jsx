@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../assets/CSS/Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight, FaUser, FaBars, FaTimes } from "react-icons/fa";
+import Teki from '../assets/images/tekilogo.jpg'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,10 +13,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo-section">
-        <img src="/logo.png" alt="logo" className="logo-icon" />
+        <img src={Teki} alt="logo" className="logo-icon" />
         <div>
           <h1 className="logo-text">NIKAHNAMAH.COM</h1>
-          <p className="subtitle">MUSLIM MATRIMONIAL</p>
+          <p className="subtitle">Tekisky MATRIMONIAL</p>
         </div>
       </div>
 

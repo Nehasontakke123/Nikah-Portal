@@ -1,0 +1,111 @@
+.plans-page {
+  padding: 40px 20px;
+  background: #fff4fa;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.plans-title {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #FF477E;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plan-card {
+  background: #ffe9f1;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px dashed #FF477E;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.plan-card ul li {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.plan-prices {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price-block h4 {
+  font-size: 1rem;
+  color: #FF477E;
+  margin-bottom: 5px;
+}
+
+.price-block p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.plan-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  background-color: #FF477E;
+  color: white;
+  border-radius: 20px;
+}
+
+.discount {
+  font-size: 0.9rem;
+  color: green;
+  margin-top: 8px;
+}
+
+.terms {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .plans-title {
+    font-size: 1.8rem;
+  }
+
+  .plan-card {
+    padding: 20px;
+  }
+
+  .plan-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .price-block p {
+    font-size: 1rem;
+  }
+}

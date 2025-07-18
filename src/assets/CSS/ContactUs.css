@@ -1,0 +1,130 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+  background: #ffebf2;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form, .contact-details {
+  flex: 1 1 45%;
+  background: #fffdfc;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.contact-form:hover, .contact-details:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2, .contact-details h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 3px solid #FF6B6B;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  color: #444;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fff7f7;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ffebf2;
+  background: #fff;
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background:#FF477E;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #f04698;
+}
+
+/* Contact Details Styling */
+.contact-details p,
+.contact-details li {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-details strong {
+  color: #000;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.contact-details ul li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.contact-details ul li::before {
+  content: "📞";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact-details h3 {
+  margin-top: 25px;
+  font-size: 18px;
+  color:black;
+  border-left: 4px solid #FF477E;
+  padding-left: 10px;
+}
+
+.contact-details address {
+  font-style: normal;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .contact-form, .contact-details {
+    flex: 1 1 100%;
+  }
+}

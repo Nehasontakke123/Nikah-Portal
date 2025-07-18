@@ -2,8 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/HomePage";
 import Footer from "./components/Footer";
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
+import AboutUsPage from "./pages/AboutUsPage";
+import PlansPage from "./pages/PlansPage";
+import ContactUsPage from "./pages/ContactUsPage";
 // ... etc
 
 const App = () => {
@@ -12,8 +13,11 @@ const App = () => {
       <Navbar />
        <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/about" element={<AboutUsPage />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/plans" element={<PlansPage />} />
+        {/* Add other routes as needed */}
+        <Route path="/contact" element={<ContactUsPage />} />
         
       </Routes> 
       <Footer/>
