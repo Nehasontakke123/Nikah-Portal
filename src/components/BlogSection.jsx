@@ -10,7 +10,7 @@ const blogs = [
     comments: 0,
     image: "https://t4.ftcdn.net/jpg/10/01/68/77/360_F_1001687783_00LlbzgFn82cz42SESzDJmMN9VuKAFsz.jpg",
     summary:
-      "Looking for a trusted Muslim marriage bureau in Karnataka? NikahNamah offers verified profiles, halal matchmaking, and h...",
+      "Looking for a trusted Muslim marriage bureau in Karnataka? Tekisky offers verified profiles, halal matchmaking, and h...",
     link: "#"
   },
   {
@@ -21,7 +21,7 @@ const blogs = [
     comments: 0,
     image: "https://t3.ftcdn.net/jpg/11/53/96/02/360_F_1153960247_QyLuumK0idRzZnN175YigA9uIaLfg5Eo.jpg",
     summary:
-      "Discover verified Muslim brides and grooms with Nikahnamah – a trusted Muslim marriage bureau in Saudi Arabia offering h...",
+      "Discover verified Muslim brides and grooms with Tekisky – a trusted Muslim marriage bureau in Saudi Arabia offering h...",
     link: "#"
   },
   {
@@ -36,14 +36,14 @@ const blogs = [
     link: "#"
   },
   {
-    title: "NikahNamah – Your Trusted Muslim Matrimony Partner in Saudi Arabia",
+    title: "Tekisky – Your Trusted Muslim Matrimony Partner in Saudi Arabia",
     date: "06 Jun, 2025",
     views: 272,
     likes: 8,
     comments: 0,
     image: "https://img.freepik.com/free-photo/back-view-islamic-couple-spending-time-together_23-2151064038.jpg?semt=ais_hybrid&w=740",
     summary:
-      "Find verified Muslim life partners in Saudi Arabia with NikahNamah. Trusted halal matrimony service in Riyadh, Jeddah, D...",
+      "Find verified Muslim life partners in Saudi Arabia with Tekisky. Trusted halal matrimony service in Riyadh, Jeddah, D...",
     link: "#"
   },
 ];
@@ -53,7 +53,7 @@ const BlogSection = () => {
     <div className="blog-section">
       <h2 className="blog-title">LATEST FROM OUR BLOG</h2>
       <p className="blog-subtitle">
-        Start your journey with Bismillah on Nikahnamah – India’s leading Muslim matchmaking platform.
+        Start your journey with Bismillah on Tekisky – India’s leading Muslim matchmaking platform.
         For helpful tips and real marriage guidance, explore our <strong>Muslim Marriage Guide</strong> in the Blog section.
       </p>
 

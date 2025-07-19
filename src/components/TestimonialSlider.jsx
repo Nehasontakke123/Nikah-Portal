@@ -12,25 +12,25 @@ const testimonials = [
     img: "https://i.pinimg.com/236x/d5/0a/4c/d50a4c2e9fbc09b58d652c3156a230ac.jpg",
     name: "FATIMA & IMRAN",
     title: "A Platform That Prioritizes Privacy",
-    text: "What stood out for me with NikahNamah is their privacy and security. I felt confident knowing that the platform...",
+    text: "What stood out for me with Tekisky is their privacy and security. I felt confident knowing that the platform...",
   },
   {
     img: "", // No image
     name: "Sara & Rizwan",
     title: "Blessed with Love",
-    text: "What stood out for me with NikahNamah is their privacy and security. I felt confident knowing that the platform...", // No text
+    text: "What stood out for me with Tekisky is their privacy and security. I felt confident knowing that the platform...", // No text
   },
    {
     img: "https://i.pinimg.com/236x/d5/0a/4c/d50a4c2e9fbc09b58d652c3156a230ac.jpg",
     name: "FATIMA & IMRAN",
     title: "A Platform That Prioritizes Privacy",
-    text: "What stood out for me with NikahNamah is their privacy and security. I felt confident knowing that the platform...",
+    text: "What stood out for me with Tekisky is their privacy and security. I felt confident knowing that the platform...",
   },
    {
     img: "https://i.pinimg.com/236x/d5/0a/4c/d50a4c2e9fbc09b58d652c3156a230ac.jpg",
     name: "FATIMA & IMRAN",
     title: "A Platform That Prioritizes Privacy",
-    text: "What stood out for me with NikahNamah is their privacy and security. I felt confident knowing that the platform...",
+    text: "What stood out for me with Tekisky is their privacy and security. I felt confident knowing that the platform...",
   },
 ];
 
@@ -39,7 +39,7 @@ const TestimonialSlider = () => {
     <section className="testimonial-section">
       <h2 className="testimonial-heading">
         Trusted by countless families for finding the right match —{" "}
-        <span>NikahNamah</span>.
+        <span>Tekisky</span>.
       </h2>
 
       <div className="testimonial-slider">

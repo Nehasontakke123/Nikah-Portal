@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AboutUsPage from "./pages/AboutUsPage";
 import PlansPage from "./pages/PlansPage";
 import ContactUsPage from "./pages/ContactUsPage";
+import FeedbackPage from "./pages/FeedbackPage";
 // ... etc
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/plans" element={<PlansPage />} />
         {/* Add other routes as needed */}
         <Route path="/contact" element={<ContactUsPage />} />
-        
+         <Route path="/blogs" element={<FeedbackPage />} />
       </Routes> 
       <Footer/>
     </>

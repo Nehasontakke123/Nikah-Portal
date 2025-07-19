@@ -12,7 +12,7 @@ const AboutUsInformation = () => {
       <div className="about-section">
         <h2>What We Do</h2>
         <p>
-          At Nikahnamah, we provide a comprehensive and halal platform designed to help Muslims find their ideal life partners.
+          At Tekisky, we provide a comprehensive and halal platform designed to help Muslims find their ideal life partners.
           Our services are grounded in Islamic principles, ensuring that every step respects and upholds the values of faith and respect.
         </p>
       </div>
@@ -45,7 +45,7 @@ const AboutUsInformation = () => {
       </div>
 
       <div className="about-section">
-        <h2>Why Nikahnamah</h2>
+        <h2>Why Tekisky</h2>
         <ul>
           <li><strong>Personalized Matchmaking:</strong> Tailored to your preferences with expert support.</li>
           <li><strong>Secure & Confidential:</strong> Verified profiles and strict privacy policies.</li>
@@ -57,14 +57,14 @@ const AboutUsInformation = () => {
       <div className="about-section">
         <h2>Who We Are</h2>
         <p>
-          At Nikahnamah, we are a dedicated team helping Muslims find life partners through a halal and respectful process.
+          At Tekisky, we are a dedicated team helping Muslims find life partners through a halal and respectful process.
           We are committed to strong Islamic values: <strong>faith, integrity, and respect</strong>.
         </p>
         <p>
           Our platform is secure and verified. We use smart algorithms to connect people based on compatibility, culture, and faith.
         </p>
         <p>
-          Join Nikahnamah and take the first step towards a blessed and beautiful future, rooted in Quran and Sunnah.
+          Join Tekisky and take the first step towards a blessed and beautiful future, rooted in Quran and Sunnah.
         </p>
       </div>
     </div>

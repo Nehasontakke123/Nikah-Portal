@@ -38,7 +38,7 @@ const FeaturesSection = () => {
       </div>
 
       <div className="app-benefits-section">
-        <h2>Why Choose the NikahNamah App?</h2>
+        <h2>Why Choose the Tekisky App?</h2>
         <p>Built for modern Muslims who value family, trust, and faith</p>
 
         <div className="benefits-grid">

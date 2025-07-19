@@ -29,7 +29,7 @@ const SearchBar = () => {
           <span className="heart-icon">❤️</span>
         </span>
       </h2>
-      <p className="sub-text">Find your right match with NikahNamah</p>
+      <p className="sub-text">Find your right match with Tekisky</p>
 
       <form className="search-bar" onSubmit={handleSubmit}>
         <select name="gender" value={form.gender} onChange={handleChange}>

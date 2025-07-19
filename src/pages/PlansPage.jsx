@@ -74,7 +74,7 @@ const plans = [
 const PlansPage = () => {
   return (
     <div className="plans-page">
-      <h1 className="plans-title">Upgrade Your Profile with Nikahnamah's Package Plans</h1>
+      <h1 className="plans-title">Upgrade Your Profile with Tekisky's Package Plans</h1>
       <div className="plans-grid">
         {plans.map((plan, idx) => (
           <div className="plan-card" key={idx} style={{ borderTop: `6px solid ${plan.color}` }}>

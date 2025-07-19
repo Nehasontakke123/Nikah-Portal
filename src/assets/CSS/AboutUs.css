@@ -1,69 +1,76 @@
 .about-us {
   padding: 60px 20px;
-  background-color:white;
+  background: linear-gradient(to bottom right, #fff, #fdf0f5);
+  border-radius: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  margin: 40px auto;
   font-family: 'Segoe UI', sans-serif;
+  max-width: 1200px;
 }
 
 .about-us__container {
-  max-width: 1000px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .about-us__image {
-  flex: 1 1 300px;
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
   padding: 20px;
-  text-align: center;
 }
 
 .about-us__image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
 }
 
 .about-us__image img:hover {
   transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .about-us__content {
-  flex: 2 1 400px;
+  flex: 1 1 55%;
   padding: 20px;
 }
 
 .about-us__title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #FF477E;
+  background: linear-gradient(to right, #FF477E, #FF9A8B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-us__content p {
   font-size: 1.1rem;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 16px;
-  color: #555;
+  color: #333;
 }
 
-/* ✅ Responsive Styles */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .about-us__container {
     flex-direction: column;
-    text-align: center;
   }
 
   .about-us__image,
   .about-us__content {
     flex: 1 1 100%;
-    padding: 10px;
   }
 
   .about-us__title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .about-us__content p {
@@ -73,7 +80,7 @@
 
 @media (max-width: 480px) {
   .about-us {
-    padding: 40px 10px;
+    padding: 40px 15px;
   }
 
   .about-us__title {
@@ -85,6 +92,6 @@
   }
 
   .about-us__image img {
-    height: auto;
+    max-height: 250px;
   }
 }

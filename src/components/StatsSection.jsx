@@ -36,8 +36,8 @@ const StatsSection = () => {
         <p>
           Experience personalized matrimonial services, expert support, and a
           platform built on Islamic values at{" "}
-          <a href="https://nikahnamah.com" target="_blank" rel="noreferrer">
-            Nikahnamah.com
+          <a href="https://Tekisky.com" target="_blank" rel="noreferrer">
+            Tekisky.com
           </a>
         </p>
       </div>

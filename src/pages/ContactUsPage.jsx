@@ -28,21 +28,25 @@ const ContactUsPage = () => {
 
       <div className="contact-details">
         <h2>Reach Our Expert Team</h2>
-        <p><strong>Phone:</strong> +91 98451 30331</p>
+        <p><strong>Phone:</strong>+91 8625817334</p>
         <p><strong>Help & Support:</strong></p>
         <ul>
-          <li>+91 96117 93313</li>
-          <li>+91 90360 22522</li>
-          <li>+91 98459 20331</li>
-          <li>+91 90350 22457</li>
+          <li>+91 9890796149</li>
+          <li>+91 9373960682</li>
+          <li>+91 7842363997</li>
+          <li>+91 7842363997</li>
         </ul>
 
         <h3>Email Address</h3>
-        <p>support@nikahnamah.com</p>
-        <p>info.nikahnamah@gmail.com</p>
+        <p>hr@tekisky.com</p>
+        <p>tekisky@2021gmail.com</p>
 
         <h3>Address</h3>
-        <p>1827, 2nd floor, 26th Main, 41st Cross Rd, Jayanagara 9th Block, Bengaluru, Karnataka 560069</p>
+        <p>2nd Floor, Opposite Water Tank, Workshop Corner, Nanded, Maharashtra 431605, India
+          Monday to Saturday - : 11:00 AM to 7:00 PM
+Friday - : 11:00 AM to 1:00 PM & 2:00 PM to 7:00 PM
+Sunday: Closed
+        </p>
       </div>
     </div>
   );

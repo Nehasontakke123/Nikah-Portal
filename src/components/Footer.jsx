@@ -9,8 +9,8 @@ const Footer = () => {
 
         {/* Logo and Tagline */}
         <div className="footer-section about">
-          <h2 className="logo">Nikahnamah</h2>
-          <p>India’s Trusted Muslim Matrimony Platform. Find your perfect match with privacy, tradition, and trust.</p>
+          <h2 className="logo">Tekisky MATRIMONIAL</h2>
+          <p>India’s Trusted Muslim Matrimony Platform. Find your perfect match with privacy, tradition, and trust. 2nd Floor, Opposite Water Tank, Workshop Corner, Nanded,</p>
         </div>
 
         {/* Navigation Links */}
@@ -28,9 +28,10 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="footer-section contact">
           <h3>Contact Us</h3>
-          <p>Email: info@nikahnamah.com</p>
-          <p>Phone: +91 98451 30331</p>
-          <p>Bengaluru, India</p>
+          <p>hr@tekisky.com</p>
+          <p>+91 8625817334</p>
+          <p>+91 9890796149</p>
+          <p>India , Maharashtra , Nanded</p>
           <div className="social-icons">
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaInstagram /></a>
@@ -42,7 +43,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Nikahnamah. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Tekisky. All rights reserved.</p>
       </div>
     </footer>
   );

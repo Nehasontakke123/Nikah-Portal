@@ -10,11 +10,11 @@ const About = () => {
           <img src="https://img.freepik.com/premium-photo/muslim-couples-breaking-their-fast_198067-108640.jpg" alt="Guidance Team" className="about-img bottom-img" />
         </div>
         <div className="about-text">
-          <h1 className="title">Nikahnamah</h1>
+          <h1 className="title">Tekisky</h1>
           <h2 className="subtitle">Best Muslim Matrimony in India</h2>
           <p className="greeting">Assalamu Alaikum,</p>
           <p>
-            Nikahnamah is more than just a matrimony website; it's a platform grounded in Islamic principles,
+            Tekisky is more than just a matrimony website; it's a platform grounded in Islamic principles,
             designed to facilitate meaningful connections leading to marriage. Our team consists of experienced
             relationship managers who are committed to guiding you through your journey to find a compatible life
             partner while upholding the values of faith, integrity, and respect.

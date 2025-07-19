@@ -90,7 +90,7 @@ const NikahNamahSection = () => {
 
         <div className="nikah-text">
           <h1>
-            Welcome to <span className="highlight">NikahNamah</span> – India&apos;s #1 Most Trusted Muslim Matrimony Website
+            Welcome to <span className="highlight">Tekisky</span> – India&apos;s #1 Most Trusted Muslim Matrimony Website
           </h1>
           <p>
             Marriage is a sacred union guided by faith, values, and family traditions.

@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
               className="why-image"
             />
             <div className="overlay-card">
-              <h3>NIKAHNAMAH.COM</h3>
+              <h3>Tekisky.COM</h3>
               <p>Best Muslim Marriage Bureau in Bangalore</p>
             </div>
           </div>
