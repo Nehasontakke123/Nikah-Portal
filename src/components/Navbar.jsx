@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="logo-section">
         <img src={Teki} alt="logo" className="logo-icon" />
         <div>
-          <h1 className="logo-text">Tekisky.com</h1>
+          <h1 className="logo-text">Tekisky</h1>
           <p className="subtitle">MATRIMONIAL</p>
         </div>
       </div>

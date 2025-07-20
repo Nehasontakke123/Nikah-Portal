@@ -39,7 +39,7 @@ const TestimonialSlider = () => {
     <section className="testimonial-section">
       <h2 className="testimonial-heading">
         Trusted by countless families for finding the right match —{" "}
-        <span>Tekisky</span>.
+        <span>Tekisky</span>
       </h2>
 
       <div className="testimonial-slider">

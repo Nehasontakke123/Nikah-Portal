@@ -56,7 +56,7 @@ return (
 
         <div className="popup">
           <button className="close-btn" onClick={() => setShowPopup(false)}>×</button>
-          <h2>Welcome to NikahNamah!</h2>
+          <h2>Welcome to Tekisky  Matrimony!</h2>
           <img
             src="https://wallpapers.com/images/hd/blissful-muslim-couple-d4rtc31pbwv93s8e.jpg"
             alt="Welcome"

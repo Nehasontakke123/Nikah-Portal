@@ -33,7 +33,7 @@ const AboutUsPage = () => {
           <div className="about-us__content">
             <h2 className="about-us__title">About Us</h2>
             <p>
-              Tekisky is more than just a matrimony website; it’s a platform grounded in Islamic principles,
+              Tekisky Matrimony is more than just a matrimony website; it’s a platform grounded in Islamic principles,
               designed to facilitate meaningful connections leading to lifelong marriages.
             </p>
             <p>
@@ -41,7 +41,7 @@ const AboutUsPage = () => {
               family values. We provide verified profiles and expert guidance every step of the way.
             </p>
             <p>
-              Founded in 2003 and based in Bangalore, we are proud to be India’s trusted Muslim matrimonial service,
+              Founded in 2003 and based in India, we are proud to be India’s trusted Muslim matrimonial service,
               committed to transforming online matrimony with transparency and tradition.
             </p>
           </div>
