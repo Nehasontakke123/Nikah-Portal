@@ -106,9 +106,10 @@ const FeedbackForm = () => {
 
   <hr className="divider" />
 
-  <h3 className="feedbacks-heading">Latest Feedbacks 📝</h3>
-  {feedbacks.length > 0 ? (
-    feedbacks.map((fb) => (
+ <h3 className="feedbacks-heading">Latest Feedbacks 📝</h3>
+{feedbacks.length > 0 ? (
+  <div className="feedback-scroll-wrapper">
+    {feedbacks.map((fb) => (
       <div key={fb._id} className="feedback-card">
         <strong>{fb.name}</strong> ({fb.rating}/5)
         <p>{fb.message}</p>
@@ -118,10 +119,12 @@ const FeedbackForm = () => {
           <button onClick={() => handleDelete(fb._id)} className="delete-button">Delete</button>
         </div>
       </div>
-    ))
-  ) : (
-    <p>No feedback yet!</p>
-  )}
+    ))}
+  </div>
+) : (
+  <p>No feedback yet!</p>
+)}
+
 </div>
 
   );

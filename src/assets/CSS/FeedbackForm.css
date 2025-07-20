@@ -1,47 +1,49 @@
 .feedback-form-container {
-  max-width: 700px;
-  margin: 40px auto;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .form-heading {
-  color: #FF477E;
+  text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
-  text-align: center;
+  color: #333;
 }
 
 .feedback-form {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(255, 71, 126, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .form-input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 10px;
   font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #4caf50;
 }
 
 .submit-button {
-  background-color: #FF477E;
+  background-color:#FF477E;
   color: white;
-  padding: 12px 24px;
+  padding: 10px;
+  font-size: 18px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  width: 100%;
-  font-size: 16px;
   transition: background 0.3s ease;
 }
 
 .submit-button:hover {
-  background-color: #e5386b;
+  background-color:#e52c63;
 }
 
 .success-text {
@@ -57,84 +59,90 @@
 }
 
 .divider {
-  margin: 40px 0;
+  margin: 30px 0;
   border: none;
-  height: 1px;
-  background-color: #eee;
+  border-top: 1px solid #ccc;
 }
 
 .feedbacks-heading {
-  color: #FF477E;
-  font-size: 24px;
-  margin-bottom: 15px;
   text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* 🌟 Horizontal Scroll Carousel for Feedbacks */
+.feedback-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .feedback-card {
-  background: #fef1f5;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  min-width: 260px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: scale(1.03);
 }
 
 .feedback-card strong {
-  font-size: 18px;
-  color: #333;
-}
-
-.feedback-card p {
-  margin: 8px 0;
-  color: #555;
+  color: #2c3e50;
 }
 
 .feedback-card small {
   color: #888;
+  display: block;
+  margin-top: 6px;
 }
 
 .button-group {
-  margin-top: 10px;
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
 }
 
-.edit-button, .delete-button {
+.edit-button,
+.delete-button {
   padding: 6px 12px;
-  margin-right: 10px;
+  font-size: 14px;
   border: none;
   border-radius: 6px;
-  font-size: 14px;
   cursor: pointer;
 }
 
 .edit-button {
-  background-color: #ffc107;
+  background-color: #2196f3;
   color: white;
-}
-
-.edit-button:hover {
-  background-color: #e0a800;
 }
 
 .delete-button {
-  background-color: #dc3545;
+  background-color: #e53935;
   color: white;
 }
 
-.delete-button:hover {
-  background-color: #c82333;
-}
-
-/* Responsive */
-@media screen and (max-width: 600px) {
-  .form-heading,
-  .feedbacks-heading {
-    font-size: 22px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feedback-form-container {
+    padding: 15px;
   }
 
-  .submit-button {
-    font-size: 14px;
+  .form-heading {
+    font-size: 24px;
   }
 
-  .form-input {
-    font-size: 14px;
+  .feedback-card {
+    min-width: 220px;
   }
 }

@@ -5,7 +5,7 @@ const AboutUsInformation = () => {
   return (
     <div className="about-us-container">
       <div className="about-header">
-        <h1>Best Muslim Matrimony in Bangalore</h1>
+        <h1>Best Muslim Matrimony in India</h1>
         <p>Helping Muslims find their ideal life partners with faith, respect, and integrity.</p>
       </div>
 
@@ -45,7 +45,7 @@ const AboutUsInformation = () => {
       </div>
 
       <div className="about-section">
-        <h2>Why Tekisky</h2>
+        <h2>Why Tekisky Matrimony</h2>
         <ul>
           <li><strong>Personalized Matchmaking:</strong> Tailored to your preferences with expert support.</li>
           <li><strong>Secure & Confidential:</strong> Verified profiles and strict privacy policies.</li>

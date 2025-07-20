@@ -14,7 +14,7 @@ import BlogSection from '../components/BlogSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 // Image imports
 import Slider1 from '../assets/images/slider1.jpg';
-import Slider2 from '../assets/images/slider2.jpg';
+import Slider2 from '../assets/images/slider5.jpg';
 import Slider3 from '../assets/images/slider4.jpg';
 
 const Home = () => {
