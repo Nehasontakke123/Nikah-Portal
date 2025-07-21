@@ -5,12 +5,15 @@ import { FaArrowRight, FaUser, FaBars, FaTimes } from "react-icons/fa";
 import Swal from "sweetalert2";
 import Teki from "../assets/images/tekilogo.jpg";
 import '../assets/CSS/SweetAlertCustom.css';
+ import axios from "https://cdn.jsdelivr.net/npm/axios@1.6.8/+esm";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
+
+
 const showLoginForm = () => {
   Swal.fire({
     title: "Login",
@@ -39,21 +42,14 @@ const showLoginForm = () => {
       }
 
       try {
-        const response = await fetch("https://nikah-backend.onrender.com/login", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email, password })
+        const response = await axios.post("https://nikah-backend.onrender.com/api/auth/login", {
+          email,
+          password,
         });
 
-        const data = await response.json();
-
-        if (!response.ok) {
-          throw new Error(data.message || "Login failed");
-        }
-
-        return data;
+        return response.data;
       } catch (error) {
-        Swal.showValidationMessage(error.message);
+        Swal.showValidationMessage(error.response?.data?.message || "Login failed");
         return false;
       }
     },
@@ -65,8 +61,7 @@ const showLoginForm = () => {
   });
 };
 
-
- const showRegisterForm = () => {
+const showRegisterForm = () => {
   Swal.fire({
     title: "Register",
     html: `
@@ -106,21 +101,18 @@ const showLoginForm = () => {
       }
 
       try {
-        const response = await fetch("https://nikah-backend.onrender.com/register", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, mobile, password, plan })
+        const response = await axios.post("https://nikah-backend.onrender.com/api/auth/register", {
+          name,
+          email,
+          mobile,
+          password,
+          confirmPassword,
+          plan,
         });
 
-        const data = await response.json();
-
-        if (!response.ok) {
-          throw new Error(data.message || "Registration failed");
-        }
-
-        return data;
+        return response.data;
       } catch (error) {
-        Swal.showValidationMessage(error.message);
+        Swal.showValidationMessage(error.response?.data?.message || "Registration failed");
         return false;
       }
     },
