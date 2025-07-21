@@ -148,3 +148,38 @@
     justify-content: center;
   }
 }
+
+
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  margin-top: -20px;
+  
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff2e63; /* pink tone */
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  margin: 0;
+  letter-spacing: 1px;
+}

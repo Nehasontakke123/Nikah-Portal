@@ -60,15 +60,16 @@
 }
 
 .badge {
-  background: linear-gradient(135deg, #ffe2e8, #ffd1dc, #fff0f3);
-  color:black;
-  text-align: center;
-  padding: 10px 0;
-  position: absolute;
-  bottom: 200px;
-  width: 100%;
-  font-size: 15px;
-  font-weight: 600;
+      background: linear-gradient(135deg, #ffe2e8, #ffd1dc, #fff0f3);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .badge p {
