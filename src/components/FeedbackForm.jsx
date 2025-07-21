@@ -15,7 +15,7 @@ const FeedbackForm = () => {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await axios.get('http://localhost:7001/api/blogs');
+      const res = await axios.get('https://nikah-backend.onrender.com/api/blogs');
       setFeedbacks(res.data);
     } catch (err) {
       console.error('Error fetching feedbacks:', err);
@@ -29,11 +29,11 @@ const FeedbackForm = () => {
 
     try {
       if (editingId) {
-        await axios.put(`http://localhost:7001/api/blogs/${editingId}`, formData);
+        await axios.put(`https://nikah-backend.onrender.com/api/blogs/${editingId}`, formData);
         setSuccess('Feedback updated successfully!');
         setEditingId(null);
       } else {
-        await axios.post('http://localhost:7001/api/blogs', formData);
+        await axios.post('https://nikah-backend.onrender.com/api/blogs', formData);
         setSuccess('Feedback submitted successfully!');
       }
       setFormData({ name: '', message: '', rating: 5 });
@@ -51,7 +51,7 @@ const FeedbackForm = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:7001/api/blogs/${id}`);
+      await axios.delete(`https://nikah-backend.onrender.com/api/blogs/${id}`);
       fetchFeedbacks();
     } catch (err) {
       console.error('Delete error:', err);
